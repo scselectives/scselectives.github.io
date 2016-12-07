@@ -11,7 +11,11 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script> $(document).ready(function () {$('#id01').modal('show');}); </script>
+    <script>$(document).ready(function () {
+
+    $('#memberModal').modal('show');
+
+      });</script>
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,22 +40,32 @@
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
 </ul>
-    <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-closebtn">&times;</span>
-        <h2>Modal Header</h2>
-      </header>
-      <div class="w3-container">
-        <p>Some text..</p>
-        <p>Some text..</p>
-      </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer>
+    
+    <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                 <h4 class="modal-title" id="memberModalLabel">Thank you for signing in!</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>However the account provided is not known.
+                    <BR>If you just got invited to the group, please wait for a day to have the database synchronized.</p>
+                <p>You will now be shown the Demo site.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+    
+    
+    
+    
+    
 
     <div id="content-wrapper">
       <div class="inner clearfix">
